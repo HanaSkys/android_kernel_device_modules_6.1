@@ -251,9 +251,11 @@ extern int (*mtk_get_dvfs_loading_mode_fp)(void);
 extern void (*mtk_dvfs_workload_mode_fp)(int i32WorkloadMode);
 extern int (*mtk_get_dvfs_workload_mode_fp)(void);
 extern void ged_get_gpu_utli_ex(struct GpuUtilization_Ex *util_ex);
+#undef MAX
 #ifndef MAX
 #define MAX(x, y)	((x) < (y) ? (y) : (x))
 #endif
+#undef MIN
 #ifndef MIN
 #define MIN(x, y)      ((x) < (y) ? (x) : (y))
 #endif

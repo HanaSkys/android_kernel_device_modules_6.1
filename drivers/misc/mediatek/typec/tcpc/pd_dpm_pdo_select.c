@@ -71,6 +71,7 @@ void dpm_extract_pdo_info(uint32_t pdo, struct dpm_pdo_info_t *info)
 	}
 }
 
+#undef MIN
 #ifndef MIN
 #define MIN(a, b)	((a < b) ? (a) : (b))
 #endif

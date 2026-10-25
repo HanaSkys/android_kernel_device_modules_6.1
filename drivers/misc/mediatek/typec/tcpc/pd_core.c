@@ -1375,6 +1375,7 @@ int pd_update_connect_state(struct pd_port *pd_port, uint8_t state)
  * Collision Avoidance : check tx ok
  */
 
+#undef MIN
 #ifndef MIN
 #define MIN(a, b)       ((a < b) ? (a) : (b))
 #endif
